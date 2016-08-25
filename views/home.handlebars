@@ -1,0 +1,25 @@
+<div class="text-center">
+  <h1>{{title}}</h1>
+  <p>Write what you're thinking about in the text area below</p>
+</div>
+
+<form class="status-form" method="POST">
+
+  <div class="form-group">
+    <textarea class="form-control" rows="3" name="status"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update Status</button>
+
+</form>
+
+<hr />
+
+{{#each statuses}}
+
+<div class="status">
+  <h5>{{username}}</h5>
+  <p>{{text_status}}</p>
+</div>
+
+{{/each}}
